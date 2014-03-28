@@ -1025,6 +1025,61 @@ namespace logic
 		m_z_index = layer_index;
 	}
 
+	//implementajca metod protected:
+
+	//Metoda ustawia indeks warstwy renderingu obiektu (body)
+	void CPhysical::SetZIndexBody(int layer_index)
+	{
+		//metoda rejestruje obiekt tylko wtedy, gdy parametr (int layer_index),
+		//indeks warstwy, zmieniamy na inny ni¿ w tej klasie (default jest to Z_PHYSICAL_BODY)
+		//co mo¿e (powinno) byæ zaimplementowane w klasach pochodnych
+		//oraz gdy wskaŸnik jest zainicjowany
+		if ((m_z_index_body != layer_index) &&(p_displayable_body!= NULL))
+			gDrawableManager.RegisterDrawable(p_displayable_body, layer_index);
+	
+		m_z_index_body = layer_index;
+	}
+
+	//Metoda ustawia indeks warstwy renderingu obiektu (body shadow)
+	void CPhysical::SetZIndexShadowBody(int layer_index)
+	{
+		//metoda rejestruje obiekt tylko wtedy, gdy parametr (int layer_index),
+		//indeks warstwy, zmieniamy na inny ni¿ w tej klasie (default jest to //Z_PHYSICAL_SHADOWS_BODY) co mo¿e (powinno) byæ zaimplementowane w klasach pochodnych
+		//oraz gdy wskaŸnik jest zainicjowany
+		if ((m_z_index_shadow_body != layer_index) &&(p_displayable_body_shadow!= NULL))
+			gDrawableManager.RegisterDrawable(p_displayable_body_shadow, layer_index);
+		
+		m_z_index_shadow_body = layer_index;
+	}
+
+	//Metoda ustawia indeks warstwy renderingu obiektu (head)
+	void CPhysical::SetZIndexHead(int layer_index)
+	{
+		//metoda rejestruje obiekt tylko wtedy, gdy parametr (int layer_index),
+		//indeks warstwy, zmieniamy na inny ni¿ w tej klasie (default jest to Z_PHYSICAL_HEAD)
+		//co mo¿e (powinno) byæ zaimplementowane w klasach pochodnych
+		//oraz gdy wskaŸnik jest zainicjowany
+		if ((m_z_index_head != layer_index) &&(p_displayable_head!= NULL))
+			gDrawableManager.RegisterDrawable(p_displayable_head, layer_index);
+		
+		m_z_index_head = layer_index;
+	}
+
+	//Metoda ustawia indeks warstwy renderingu obiektu (head shadow)
+	void CPhysical::SetZIndexShadowHead(int layer_index)
+	{
+		//metoda rejestruje obiekt tylko wtedy, gdy parametr (int layer_index),
+	//indeks warstwy, zmieniamy na inny ni¿ w tej klasie (default jest to 
+	//Z_PHYSICAL_SHADOWS_HEAD)
+		//co mo¿e (powinno) byæ zaimplementowane w klasach pochodnych
+		//oraz gdy wskaŸnik jest zainicjowany
+		if ((m_z_index_shadow_head != layer_index) &&(p_displayable_head_shadow!= NULL))
+			gDrawableManager.RegisterDrawable(p_displayable_head_shadow, layer_index);
+		
+		m_z_index_shadow_head = layer_index;
+	}
+
+
 	//implementajca metod private:
 
 	//prywatna metoda sprawdza, czy trzeba utworzyæ obiekt klasy CDisplayable

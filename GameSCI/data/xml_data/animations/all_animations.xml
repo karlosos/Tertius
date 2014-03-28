@@ -157,4 +157,28 @@
 		<animation_frame 	frame_time = "0.125" texture_name = "data/graphics/atlases/backpack_atlas.png" rect_left = "384"	rect_top = "0" rect_width = "64"rect_height = "64" />
 		<animation_frame 	frame_time = "0.125" texture_name = "data/graphics/atlases/backpack_atlas.png" rect_left = "448"	rect_top = "0" rect_width = "64"rect_height = "64" />
 	</animation_name>
+	
+	<!--animacja flory body-->
+	<animation_name name = "anim_flora_body">
+		<animation_frame	
+			frame_time="0.095"
+			texture_name="data/graphics/atlases/tree_body.png"
+			rect_left="0"
+			rect_top="0"
+			rect_width="128"
+			rect_height="128"
+		/>
+	</animation_name>
+	
+	<!--animacja flory head-->
+	<animation_name name = "anim_flora_head">
+		<animation_frame
+			frame_time="0.095"
+			texture_name="data/graphics/atlases/tree_head.png"
+			rect_left="0"
+			rect_top="0"
+			rect_width="64"
+			rect_height="64"
+		/>
+	</animation_name>
 </root>

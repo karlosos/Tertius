@@ -706,7 +706,54 @@ namespace logic
 		virtual void Update(float dt);
 
 	protected:
-	    
+	    ///
+		///Metoda zwraca indeks warstwy renderingu obiektu (body)
+		///
+		inline int GetZIndexBody() { return m_z_index_body; }
+
+		///
+		///Metoda zwraca indeks warstwy renderingu obiektu (body shadow)
+		///
+		inline int GetZIndexShadowBody() { return m_z_index_shadow_body; }
+
+		///
+		///Metoda zwraca indeks warstwy renderingu obiektu (head)
+		///
+		inline int GetZIndexHead() { return m_z_index_head; }
+
+		///
+		///Metoda zwraca indeks warstwy renderingu obiektu (head shadow)
+		///
+		inline int GetZIndexShadowHead() { return m_z_index_shadow_head; }
+
+		///
+		///Metoda ustawia indeks warstwy renderingu obiektu (body)
+		///
+		///@param layer_index - indeks warstwy renderingu obiektu
+		///
+		void SetZIndexBody(int layer_index);
+
+		///
+		///Metoda ustawia indeks warstwy renderingu obiektu (body shadow)
+		///
+		///@param layer_index - indeks warstwy renderingu obiektu
+		///
+		void SetZIndexShadowBody(int layer_index);
+
+		///
+		///Metoda ustawia indeks warstwy renderingu obiektu (head)
+		///
+		///@param layer_index - indeks warstwy renderingu obiektu
+		///
+		void SetZIndexHead(int layer_index);
+
+		///
+		///Metoda ustawia indeks warstwy renderingu obiektu (head shadow)
+		///
+		///@param layer_index - indeks warstwy renderingu obiektu
+		///
+		void SetZIndexShadowHead(int layer_index);
+
 		std::wstring		m_unique_id;				//unikalny identyfikator (nadawany w CPhysicalManager)
 		std::wstring		m_genre;					//nazwa "gatunku" obiektu (np. robot, human, gun, etc.)
 		sf::Vector2f		m_position;					//wektor pozycji
@@ -741,6 +788,10 @@ namespace logic
 	private:
 
 		int					m_z_index;					//indeks warstwy rysowania
+		int					m_z_index_body;				//indeks warstwy rysowania (body)
+		int					m_z_index_shadow_body;		//indeks warstwy rysowania (body shadow)
+		int					m_z_index_head;				//indeks warstwy rysowania (head)
+		int					m_z_index_shadow_head;		//indeks warstwy rysowania (head shadow)
 		int					m_physical_manager_index;	//wyliczony indeks w CPhysicalManager
 		CDisplayable*		p_displayable_body;			//wskaŸnik na obiekt CDisplayable - body (czêœæ zasadnicza)
 		CDisplayable*		p_displayable_body_shadow;	//wskaŸnik na obiekt CDisplayable - body shadow	(cieñ czêœci zasadniczej)
@@ -751,6 +802,7 @@ namespace logic
 		sf::Vector2f		m_stored_scale_head;		//zapamiêtana skala - pole pomocniczne - head
 		bool				m_smooth;					//flaga, czy obiekt wyg³adza piksele tekstury	
 		static float		m_increase;					//wspó³czynnik wirtualnej wysokoœci obiektu
+
 
 	protected:
 

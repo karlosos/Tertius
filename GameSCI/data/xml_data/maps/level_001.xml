@@ -12,6 +12,7 @@
 	<!--file - nazwapliku xml-->
 	<objtype code = "enemy_destroyer"	file = "data/xml_data/units_enemy/destroyer.xml" />
 	<objtype code = "monster_destroyer" file = "data/xml_data/units_monster/monster.xml" />
+	<objtype code = "flora" file = "data/xml_data/units_flora/tree.xml" />
 
 	<!--code - nazwa wzorca dla obiektu na mapie-->
 	<!--name - nazwa obiektu na mapie-->
@@ -20,46 +21,6 @@
 	<!--rotation_body - wartosc rotacji poczatkowej obiektu na mapie body-->
 	<!--rotation_head - wartosc rotacji poczatkowej obiektu na mapie head-->
 	<!--smooth - flaga filtru graficznego smooth obiektu na mapie-->
-
-	<obj
-		code = "enemy_destroyer"
-		name = "Janek"
-		x = "100"
-		y = "100"
-		rotation_body = "40"
-		rotation_head = "40"
-		smooth = "true"
-	/>
-	
-	<obj 
-		code = "monster_destroyer"
-		name = "Zenek"
-		x = "400"
-		y = "300"
-		rotation_body = "90"
-		rotation_head = "-90"	
-		smooth = "true"
-	/>
-	
-	<obj
-		code = "monster_destroyer"
-		name = "Jurek"
-		x = "100"
-		y = "500"
-		rotation_body = "100"
-		rotation_head = "45"
-		smooth = "true"
-	/>
-	
-	<obj
-		code = "enemy_destroyer"
-		name = "Mirek"
-		x = "500"
-		y = "80"
-		rotation_body = "-100"
-		rotation_head = "40"
-		smooth = "true"
-	/>
 	
 	<obj
 		code = "enemy_destroyer"
@@ -80,4 +41,14 @@
 		rotation_head = "-60"
 		smooth = "true"
 	/>
+	
+	<!-- las -->
+	<obj code = "flora"	name = "Tree 1"	x = "31"  y = "34" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 2"	x = "116" y = "20" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 3"	x = "78"  y = "51" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 4"	x = "48"  y = "71" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 5"	x = "122" y = "65" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 6"	x = "122" y = "65" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 6"	x = "84"  y = "97" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+
 </map>

@@ -16,14 +16,19 @@ namespace factory
 	//Konstruktor
 	CFloraTemplate::CFloraTemplate()
 	:
-		CActorTemplate()//konstruktor klasy bazowej
+		CActorTemplate				(),//konstruktor klasy bazowej
+		m_rotation_speed_body_template 	(0.0f),
+		m_rotation_speed_head_template 	(0.0f)
 	{
 	} 
 
 	//Destruktor wirtualny
 	CFloraTemplate::~CFloraTemplate()
 	{
+		m_rotation_speed_body_template = 0.0f;
+		m_rotation_speed_head_template = 0.0f;
 	}
+
 
 	//Wirtualna metoda zwalniaj¹ca zasób
 	void CFloraTemplate::Drop()
@@ -41,7 +46,7 @@ namespace factory
 	//Wirtualna metoda ³aduj¹ca dane z xml ³aduje cechy CMonster
 	bool CFloraTemplate::Load(CXml &xml)
 	{
-//sprawdzamy, czy xml zawiera informacjê, ¿e jest to jakaœ //roœlinnoœæ
+		//sprawdzamy, czy xml zawiera informacjê, ¿e jest to jakaœ //roœlinnoœæ
 		if (xml.GetString(xml.GetRootNode(), "type") != "flora")
 			return false;
 
@@ -52,6 +57,12 @@ namespace factory
 		//gdy w klasie CFlora byd¹ dodawane pola
 		//to tutaj, w klasie jej fabryki,
 		//nale¿ay utworzyæ takie same pola oraz je uwzglêdniæ
+		//³adujemy dane o prêdkoœci obrotu
+		if (xml_node<>*	node = xml.GetChild(xml.GetRootNode(), "rotation_speed"))
+		{
+		m_rotation_speed_body_template = xml.GetFloat(node, "rotation_speed_body");
+		m_rotation_speed_head_template = xml.GetFloat(node, "rotation_speed_head");
+		}
 
 		return true;
 	}
@@ -74,5 +85,10 @@ namespace factory
 	{
 		CActorTemplate::Fill(flora);
 		//ewentualnie reszta
+		if(flora)
+		{
+			flora->setRotationSpeedBody(m_rotation_speed_body_template);
+			flora->setRotationSpeedHead(m_rotation_speed_head_template);
+		}
 	}
 }//namespace factory

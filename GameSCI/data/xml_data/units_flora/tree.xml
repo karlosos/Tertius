@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<root type = "flora">
+
+	<!-- CPhysical -->
+
+	<!--nazwa obiektu-->
+	<genre genre = "drzewo - jedno z wielu" />
+	
+	<!--zakres dla promienia kolizji-->
+	<radius
+		circle_radius = "32.0"
+	/>
+	<!--rozmiar obszaru prostokątnego-->
+	<rect_size
+		rect_size_x = "64.0"
+		rect_size_y = "64.0"
+	/>
+	
+	<!--skala-->
+	<scale
+		scale_body = "0.5"
+		scale_head = "1.0"
+	/>
+
+	<!--pułap obiektu względem podłoża-->
+	<altitude
+		altitude = "1.0"
+	/>
+
+	<!--flagi decydujące o wyglądzie obiektu-->
+	<physical_config
+		use_displayable_body = "true"
+		use_shadow_body = "true"
+		use_displayable_head = "true"
+		use_shadow_head = "true"
+	/>
+
+	<!--CActor-->
+	
+	<!--wartosc energi poczatkowej obiektu-->
+	<unit_energy
+		energy = "100"
+	/>
+	
+	<!--dane techniczne-->
+	<technical_data
+		mass = "3760"
+		temperature = "34.78"
+		speed = "0"
+		movabled = "false"
+	/>
+
+	<!--zestawy animacji-->
+	<!--nazwa animacji musi byc zgodna z nazwami zarejestrowqanymi, class CAnimationManager-->
+	<!--typ animacji musi byc zgodny z wpisami w tablicy zawierającej zdefiniowane typy animacji, class CAnimSet-->
+	<animset name_animset = "animset_one">
+		<!--body-->
+		<anim name = "anim_flora_body" type = "default_body"		/>
+		<anim name = "anim_flora_body" type = "move_body"			/>
+		<anim name = "anim_flora_body" type = "death_body"			/>
+		<!--head-->
+		<anim name = "anim_flora_head" type = "default_head"		/>
+		<anim name = "anim_flora_head" type = "shot_head"			/>
+		<anim name = "anim_flora_head" type = "ammo_loading_head"	/>
+		<anim name = "anim_flora_head" type = "death_head"			/>
+	</animset>
+
+	<!--prękość obrotu korony drzewa-->
+	<rotation_speed
+		rotation_speed_body = "1"
+		rotation_speed_head = "-1"
+	/>
+	
+</root>

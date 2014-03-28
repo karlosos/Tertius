@@ -217,7 +217,7 @@ namespace game
 			}
 
 			//m_render_window->clear(sf::Color(255,255,255));
-			m_render_window->clear(sf::Color::Blue);
+			m_render_window->clear(sf::Color::White);
 			Update(elapsedTime);				//aktualizacja gry
 			m_render_window->draw(fps_text);	//statystyki...
 

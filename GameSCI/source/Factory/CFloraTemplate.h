@@ -78,6 +78,9 @@ namespace factory
 		//gdy w klasie CFlora byd¹ dodawane pola
 		//to tutaj, w klasie jej fabryki,
 		//nale¿ay utworzyæ takie same pola oraz je uwzglêdniæ
+		float m_rotation_speed_body_template; //prêdkoœæ rotacji body
+		float m_rotation_speed_head_template; //prêdkoœæ rotacji head
+
 	};
 }//namespace factory
 #endif //H_FLORA_TEMPLATE_SCI
