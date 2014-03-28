@@ -73,6 +73,9 @@
     <Filter Include="source\Map">
       <UniqueIdentifier>{2a641ba2-f8bc-4c53-87c7-177350a2abb2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\Logic\Flora">
+      <UniqueIdentifier>{7ad3411a-d9fa-4e81-abc8-17eaf30a8058}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -197,6 +200,12 @@
     </ClCompile>
     <ClCompile Include="source\Map\CMap.cpp">
       <Filter>source\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Logic\Flora\CFlora.cpp">
+      <Filter>source\Logic\Flora</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Factory\CFloraTemplate.cpp">
+      <Filter>source\Factory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -364,6 +373,12 @@
     </ClInclude>
     <ClInclude Include="source\Map\CMap.h">
       <Filter>source\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Logic\Flora\CFlora.h">
+      <Filter>source\Logic\Flora</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Factory\CFloraTemplate.h">
+      <Filter>source\Factory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

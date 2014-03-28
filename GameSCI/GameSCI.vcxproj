@@ -91,6 +91,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\Factory\CFloraTemplate.cpp" />
+    <ClCompile Include="source\Logic\Flora\CFlora.cpp" />
     <ClCompile Include="source\Map\CMap.cpp" />
     <ClCompile Include="source\Map\CMapObjectType.cpp" />
     <ClCompile Include="source\Map\CMapObjectDescriptor.cpp" />
@@ -134,6 +136,8 @@
     <ClCompile Include="source\Factory\CPlayerTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\Factory\CFloraTemplate.h" />
+    <ClInclude Include="source\Logic\Flora\CFlora.h" />
     <ClInclude Include="source\Map\CMap.h" />
     <ClInclude Include="source\Map\CMapObjectType.h" />
     <ClInclude Include="source\Map\MapHeader.h" />

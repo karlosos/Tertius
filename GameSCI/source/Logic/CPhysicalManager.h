@@ -26,6 +26,7 @@ namespace logic
 	class CEnemy;
 	class CPlayer;
 	class CMonster;
+	class CFlora;
 }
 //fabryka mo¿e produkowaæ obiekty wy¿ej wymienionych klasy
 
@@ -91,6 +92,13 @@ namespace logic
 		///@param &uniqueId - unikalny identyfikator - sta³a referencja na obiekt ///klasy std::wstring
 		///
 		logic::CMonster *CreateMonster(const std::wstring &uniqueId = L"");
+
+		///
+		///Metoda tworzy obiekt klasy CFlora i zwaraca wskaŸnik na ten obiekt
+		///
+		///@param &uniqueId - unikalny identyfikator - sta³a referencja na obiekt ///klasy std::wstring
+		///
+		CFlora *CreateFlora(const std::wstring &uniqueId = L"");
 
 		///
 		///Metoda usuwa obiekt klasy CPhysical z kontenera
