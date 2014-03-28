@@ -67,8 +67,8 @@
 
 	<!--prękość obrotu korony drzewa-->
 	<rotation_speed
-		rotation_speed_body = "1"
-		rotation_speed_head = "-1"
+		rotation_speed_body = "0.125"
+		rotation_speed_head = "-1.125"
 	/>
 	
 </root>

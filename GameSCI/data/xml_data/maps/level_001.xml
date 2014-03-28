@@ -43,7 +43,7 @@
 	/>
 	
 	<!-- las -->
-	<obj code = "flora"	name = "Tree 1"	x = "31"  y = "34" rotation_body = "0" rotation_head = "0" smooth = "true"/>
+	<obj code = "flora"	name = "Tree 1"	x = "31"  y = "34" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 2"	x = "116" y = "20" rotation_body = "0" rotation_head = "0" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 3"	x = "78"  y = "51" rotation_body = "0" rotation_head = "0" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 4"	x = "48"  y = "71" rotation_body = "0" rotation_head = "0" smooth = "true"/>

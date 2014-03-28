@@ -29,7 +29,6 @@ CActor		(uniqueId),//konstruktor klasy bazowej
 	//Wirtualna metoda aktualizuj¹ca obiekt
 	void CFlora::Update(float dt)
 	{
-		//AI flora: To Do...
 	}
 
 	//Metoda zwraca prêdkoœæ rotacji body

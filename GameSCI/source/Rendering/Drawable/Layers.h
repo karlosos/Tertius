@@ -28,9 +28,9 @@ namespace rendering
 		const int Z_CURSOR					= 1;
 		const int Z_ZERO					= 0;
 		const int Z_FLORA_SHADOW_BODY		= 98;	//flora body shadow
-		const int Z_FLORA_BODY			= 97;	//flora body
+		const int Z_FLORA_BODY				= 97;	//flora body
 		const int Z_FLORA_SHADOW_HEAD		= 96;	//flora head shadow
-		const int Z_FLORA_HEAD			= 95;	//flora head
+		const int Z_FLORA_HEAD				= 95;	//flora head
 	}//namespace drawable
 }//namespace rendering
 #endif //H_LAYER_SCI
