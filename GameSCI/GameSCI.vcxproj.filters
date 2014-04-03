@@ -76,6 +76,9 @@
     <Filter Include="source\Logic\Flora">
       <UniqueIdentifier>{7ad3411a-d9fa-4e81-abc8-17eaf30a8058}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\Logic\Car">
+      <UniqueIdentifier>{fe3b8739-6365-4e8d-bd82-5d481a7cad2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
@@ -207,6 +210,10 @@
     <ClCompile Include="source\Factory\CFloraTemplate.cpp">
       <Filter>source\Factory</Filter>
     </ClCompile>
+    <ClCompile Include="source\Logic\Car\CCar.cpp">
+      <Filter>source\Logic\Car</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Factory\CCarTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\ResourceManager\CFont.h">
@@ -380,6 +387,10 @@
     <ClInclude Include="source\Factory\CFloraTemplate.h">
       <Filter>source\Factory</Filter>
     </ClInclude>
+    <ClInclude Include="source\Logic\Car\CCar.h">
+      <Filter>source\Logic\Car</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Factory\CCarTemplate.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="notes\notes.txt">

@@ -91,6 +91,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\Factory\CCarTemplate.cpp" />
+    <ClCompile Include="source\Logic\Car\CCar.cpp" />
     <ClCompile Include="source\Factory\CFloraTemplate.cpp" />
     <ClCompile Include="source\Logic\Flora\CFlora.cpp" />
     <ClCompile Include="source\Map\CMap.cpp" />
@@ -136,6 +138,8 @@
     <ClCompile Include="source\Factory\CPlayerTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\Factory\CCarTemplate.h" />
+    <ClInclude Include="source\Logic\Car\CCar.h" />
     <ClInclude Include="source\Factory\CFloraTemplate.h" />
     <ClInclude Include="source\Logic\Flora\CFlora.h" />
     <ClInclude Include="source\Map\CMap.h" />

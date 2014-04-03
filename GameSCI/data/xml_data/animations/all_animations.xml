@@ -181,4 +181,15 @@
 			rect_height="64"
 		/>
 	</animation_name>
+	
+	<animation_name name = "anim_car_blue">
+		<animation_frame
+			frame_time="0.095"
+			texture_name="data/graphics/atlases/cars.png"
+			rect_left="0"
+			rect_top="0"
+			rect_width="78"
+			rect_height="36"
+		/>
+	</animation_name>
 </root>

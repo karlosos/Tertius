@@ -13,6 +13,7 @@
 #include "Player/CPlayer.h"
 #include "Monster/CMonster.h"
 #include "Flora/CFlora.h"
+#include "Car/CCar.h"
 #include "../Utilities/StringUtils/StringUtils.h"
 #include "../Game/CGame.h"
 #include <sstream>
@@ -121,6 +122,13 @@ namespace logic
 	{
 		fprintf(stderr, "CFlora created\n");
 		return Create<CFlora>(uniqueId);
+	}
+
+	//Metoda tworzy obiekt klasy CCar i zwaraca wskaünik na ten obiekt
+	CCar *CPhysicalManager::CreateCar(const std::wstring &uniqueId)
+	{
+		fprintf(stderr, "CCar created\n");
+		return Create<CCar>(uniqueId);
 	}
 
 	//Metoda usuwa obiekt klasy CPhysical z kontenera

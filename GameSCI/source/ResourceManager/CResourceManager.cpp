@@ -20,6 +20,7 @@
 #include "../Factory/CPlayerTemplate.h"
 #include "../Factory/CMonsterTemplate.h"
 #include "../Factory/CFloraTemplate.h"
+#include "../Factory/CCarTemplate.h"
 
 template<> resource::CResourceManager* CSingleton<resource::CResourceManager>::m_singleton = 0;
 
@@ -246,6 +247,8 @@ namespace resource
 			resource = new CMonsterTemplate();
 		else if(type == "flora")
 			resource = new CFloraTemplate();
+		else if(type == "car")
+			resource = new CCarTemplate();
 
 
 		//else if(type == "bullet")
