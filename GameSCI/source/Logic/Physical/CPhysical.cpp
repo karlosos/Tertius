@@ -1155,7 +1155,6 @@ namespace logic
 	//prywatna metoda dobieraj¹ca przesuniêcie cienia w zale¿noœci od wielkoœci obiektu - body and head
 	void CPhysical::UpdateShadowOffset(float dt)
 	{
-		int x=0;
 		//offset body
 		if(p_displayable_body)
 		{
