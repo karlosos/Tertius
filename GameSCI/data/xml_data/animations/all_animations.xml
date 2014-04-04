@@ -192,4 +192,39 @@
 			rect_height="36"
 		/>
 	</animation_name>
+	
+	<animation_name name = "anim_car_red">
+		<animation_frame
+			frame_time="0.095"
+			texture_name="data/graphics/atlases/cars.png"
+			rect_left="0"
+			rect_top="39"
+			rect_width="78"
+			rect_height="36"
+		/>
+	</animation_name>
+	
+	<animation_name name = "anim_car_white">
+		<animation_frame
+			frame_time="0.095"
+			texture_name="data/graphics/atlases/cars.png"
+			rect_left="0"
+			rect_top="78"
+			rect_width="78"
+			rect_height="36"
+		/>
+	</animation_name>
+	
+	<animation_name name = "anim_flora2">
+		<animation_frame
+			frame_time="0.095"
+			texture_name="data/graphics/atlases/trees.png"
+			rect_left="0"
+			rect_top="0"
+			rect_width="114"
+			rect_height="112"
+		/>
+	</animation_name>
+	
+	
 </root>

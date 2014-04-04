@@ -14,7 +14,9 @@
 	<objtype code = "monster_destroyer" file = "data/xml_data/units_monster/monster.xml" />
 	<objtype code = "flora" file = "data/xml_data/units_flora/tree.xml" />
 	<objtype code = "car" file = "data/xml_data/units_car/blue.xml" />
-
+	<objtype code = "car2" file = "data/xml_data/units_car/red.xml" />
+	<objtype code = "car3" file = "data/xml_data/units_car/white.xml" />
+	<objtype code = "flora2" file = "data/xml_data/units_flora/tree2.xml" />
 	<!--code - nazwa wzorca dla obiektu na mapie-->
 	<!--name - nazwa obiektu na mapie-->
 	<!--x - wspolrzedna x pozycji obiektu na mapie-->
@@ -46,26 +48,26 @@
 	<!-- las -->
 	<obj code = "flora"	name = "Tree 1"	x = "100"  y = "57" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "182"  y = "55" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
-	<obj code = "flora"	name = "Tree 1"	x = "251"  y = "50" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
+	<obj code = "flora2"	name = "Tree 1"	x = "251"  y = "50" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "342"  y = "85" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "463"  y = "40" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "550"  y = "41" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 
 	<obj code = "flora"	name = "Tree 1"	x = "420"  y = "195" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "387"  y = "277" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
-	<obj code = "flora"	name = "Tree 1"	x = "480"  y = "300" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
+	<obj code = "flora2"	name = "Tree 1"	x = "480"  y = "300" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "370"  y = "301" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
-	<obj code = "flora"	name = "Tree 1"	x = "300"  y = "368" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
+	<obj code = "flora2"	name = "Tree 1"	x = "300"  y = "368" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 
 	<obj code = "flora"	name = "Tree 1"	x = "240"  y = "420" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "70"  y = "500" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
-	<obj code = "flora"	name = "Tree 1"	x = "140"  y = "390" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
+	<obj code = "flora2"	name = "Tree 1"	x = "140"  y = "390" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	<obj code = "flora"	name = "Tree 1"	x = "400"  y = "590" rotation_body = "1" rotation_head = "-1" smooth = "true"/>
 	
 	
 	
 	<obj code = "car"	name = "Blue"	x = "200"  y = "500" rotation_body = "40.5" rotation_head = "0" smooth = "true"/>
-	<obj code = "car"	name = "Blue"	x = "500"  y = "400" rotation_body = "-40.5" rotation_head = "0" smooth = "true"/>
-	<obj code = "car"	name = "Blue"	x = "500"  y = "450" rotation_body = "-210.5" rotation_head = "0" smooth = "true"/>
+	<obj code = "car2"	name = "Blue"	x = "500"  y = "400" rotation_body = "-40.5" rotation_head = "0" smooth = "true"/>
+	<obj code = "car3"	name = "Blue"	x = "500"  y = "450" rotation_body = "-210.5" rotation_head = "0" smooth = "true"/>
 
 </map>
