@@ -60,8 +60,8 @@ namespace factory
 		//³adujemy dane o prêdkoœci obrotu
 		if (xml_node<>*	node = xml.GetChild(xml.GetRootNode(), "rotation_speed"))
 		{
-		m_rotation_speed_body_template = xml.GetFloat(node, "rotation_speed_body");
-		m_rotation_speed_head_template = xml.GetFloat(node, "rotation_speed_head");
+			m_rotation_speed_body_template = xml.GetFloat(node, "rotation_speed_body");
+			m_rotation_speed_head_template = xml.GetFloat(node, "rotation_speed_head");
 		}
 
 		return true;

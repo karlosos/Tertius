@@ -29,6 +29,9 @@ CActor		(uniqueId),//konstruktor klasy bazowej
 	//Wirtualna metoda aktualizuj¹ca obiekt
 	void CFlora::Update(float dt)
 	{
+		UpdateShadowOffset(dt);
+		this->RotateBody(m_rotation_speed_body);
+		this->RotateHead(m_rotation_speed_head);
 	}
 
 	//Metoda zwraca prêdkoœæ rotacji body

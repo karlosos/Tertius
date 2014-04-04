@@ -827,6 +827,7 @@ namespace logic
 		void CheckDisplayableHead();		//prywatna metoda sprawdza, czy trzeba utworzyæ
 											//obiekt klasy CDisplayable (head), np. gdy chcemy
 											//dodaæ obrazek, animacjê, etc...
+	public:
 
 		void UpdateShadowOffset(float dt);	//prywatna metoda dobieraj¹ca przesuniêcie cienia
 											//w zale¿noœci od wielkoœci obiektu - body and head

@@ -113,7 +113,7 @@ namespace game
 		mapa.Load("data/xml_data/maps/level_001.xml");
 		mapa.RespawnMapObjects(true);
 
-		/*
+		
 		//rêczna, bezpieczna inicjacja niektórych singleton
 		initSingletons();
 
@@ -127,19 +127,19 @@ namespace game
 		fps_text.setColor(sf::Color::Blue);
 		fps_text.setPosition(10,10);
 
-	
+	/*
 		//³adowanie danych z poziomu CResourceManager'a
 		if(gResourceManager.LoadPhysicalTemplate("data/xml_data/units_enemy/destroyer.xml") == false)
 			printf("Data not loaded...\n");
 		if(gResourceManager.LoadPhysicalTemplate("data/xml_data/units_monster/monster.xml") == false)
 			printf("Data not loaded...\n");
 
-
+		
 		//tworzê fabrykê i inicjujê j¹ danymi pobramymi z CResourceManager'a uprzednio za³adowanymi
 		CEnemyTemplate *p_enemy_template = (CEnemyTemplate*)gResourceManager.GetPhysicalTemplate("data/xml_data/units_enemy/destroyer.xml");
 		//ten kod jest testowy, bo tworzenie (respawn) obiektów bêdzie z poziomu ³adowania mapy (level'a)
 		CEnemy *p_enemy = p_enemy_template->Create(L"ID_enemy");
-
+		
 		
 		if(p_enemy)
 		{
@@ -165,7 +165,7 @@ namespace game
 			//p_enemy->RestoreColorBody();			//odzyskujemy oryginalny kolor body
 			//p_enemy->RestoreColorHead();			//odzyskujemy oryginalny kolor head
 		}
-
+		
 
 		//tworzê fabrykê i inicjujê j¹ danymi pobramymi z CResourceManager'a uprzednio za³adowanymi
 		CMonsterTemplate *p_monster_template = (CMonsterTemplate*)gResourceManager.GetPhysicalTemplate("data/xml_data/units_monster/monster.xml");
