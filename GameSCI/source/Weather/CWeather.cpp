@@ -9,6 +9,7 @@
 #include "CWeather.h"
 #include "../Game/CGame.h"
 #include "CWind.h"
+#include <iostream>
 
 using namespace weather;
 using namespace game;
@@ -84,6 +85,7 @@ namespace weather
 		{
 			m_wind->generateWind();			// generuje wiatr
 			printf("Wylosowano wiatr\n");
+			std::cout<< "Predkosc: " << m_wind->getWindSpped() << " Czas: " << m_wind->getWindDuriation() << std::endl;
 			m_elapsed_time_wind = 0.0f;		//zerujê up³yw czasu
 		}
 		//Obliczanie przesuniêcia cienia w czasie rzeczywistym
