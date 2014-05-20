@@ -213,7 +213,12 @@
     <ClCompile Include="source\Logic\Car\CCar.cpp">
       <Filter>source\Logic\Car</Filter>
     </ClCompile>
-    <ClCompile Include="source\Factory\CCarTemplate.cpp" />
+    <ClCompile Include="source\Factory\CCarTemplate.cpp">
+      <Filter>source\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Weather\CWind.cpp">
+      <Filter>source\Weather</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\ResourceManager\CFont.h">
@@ -390,7 +395,12 @@
     <ClInclude Include="source\Logic\Car\CCar.h">
       <Filter>source\Logic\Car</Filter>
     </ClInclude>
-    <ClInclude Include="source\Factory\CCarTemplate.h" />
+    <ClInclude Include="source\Factory\CCarTemplate.h">
+      <Filter>source\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Weather\CWind.h">
+      <Filter>source\Weather</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="notes\notes.txt">

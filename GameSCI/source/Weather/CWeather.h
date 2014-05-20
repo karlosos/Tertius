@@ -12,13 +12,16 @@
 #include "../Utilities/Singleton/CSingleton.h"
 #include "../Game/Listener/IFrameListener.h"
 #include <SFML/Graphics/Color.hpp>
+#include "CWind.h"
 
 using namespace listener;
+
 
 #define gWeather CWeather::GetSingleton()
 
 namespace weather
 {
+	using namespace wind;
 	///
 	///Klasa reprezentuje menad¿era zjawisk pogodowych
 	///
@@ -90,6 +93,8 @@ namespace weather
 		float				m_shadow_time;			//czas obiegu s³oñca - pora dzieñ - noc
 		sf::Color			m_color_shadow;			//kolor cienia w zale¿noœci od pory dnia
 		float				m_elapsed_time;			//up³ywajacy czas
+		float				m_elapsed_time_wind;	//up³ywajacy czas
+		CWind*				m_wind;					//obiekt reprezentuj¹cy funkcjonalnoœæ wiatru
 
 		static sf::Color	m_default_color_shadow;	//kolor cienia w zale¿noœci od pory dnia
 	};

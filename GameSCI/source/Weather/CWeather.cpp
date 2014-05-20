@@ -8,9 +8,11 @@
 
 #include "CWeather.h"
 #include "../Game/CGame.h"
+#include "CWind.h"
 
 using namespace weather;
 using namespace game;
+using namespace wind;
 
 template<> CWeather* CSingleton<CWeather>::m_singleton = 0;
 
@@ -25,9 +27,11 @@ namespace weather
 		m_color_shadow		(m_default_color_shadow),	//na sztywno, ale klasa mo¿e aktualizowaæ
 														//parametr kana³u alpha - nasycenie cienie
 														//w zale¿noœci od pory dnia...
-		m_elapsed_time		(0.0f)
+		m_elapsed_time		(0.0f),
+		m_elapsed_time_wind	(0.0f)
 	{
 		printf("CWeather::CWeather()\n");
+		m_wind = new CWind;				//tworzy obiekt wiatru
 		gGame.AddFrameListener(this);	//dodajemy do kontenera wskaŸnik na ten obiekt
 										//celem aktualizacji jego stanu
 										//i aktualizujemy logikê
@@ -42,6 +46,8 @@ namespace weather
 		m_shadow_time		= 0.0f;
 		//m_color_shadow	not edit
 		m_elapsed_time		= 0.0f;
+		m_elapsed_time_wind	= 0.0f;
+		delete m_wind;					//usuwa obiekt wiatru
 	}
 
 	//Metoda zwraca wartoœæ k¹ta - pozorny obieg Ÿród³a œwiat³a wokó³ sceny
@@ -72,7 +78,14 @@ namespace weather
 	void CWeather::FrameStarted(float secondsPassed)
 	{
 		m_elapsed_time += secondsPassed;//zliczanie czasu
+		m_elapsed_time_wind += secondsPassed;//zliczanie czasu
 
+		if (m_elapsed_time_wind > m_wind->getWindDuriation()) 
+		{
+			m_wind->generateWind();			// generuje wiatr
+			printf("Wylosowano wiatr\n");
+			m_elapsed_time_wind = 0.0f;		//zerujê up³yw czasu
+		}
 		//Obliczanie przesuniêcia cienia w czasie rzeczywistym
 		if (m_elapsed_time > m_shadow_time)
 		{
