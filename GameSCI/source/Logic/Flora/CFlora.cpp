@@ -2,13 +2,13 @@
 #include "../../Rendering/Drawable/Layers.h"
 
 using namespace rendering::drawable;
-
+//using namespace weather;
 namespace logic
 {
 	//Chroniony konstruktor domyœlny
 	CFlora::CFlora(const std::wstring& uniqueId)
 	:
-CActor		(uniqueId),//konstruktor klasy bazowej
+		CActor		(uniqueId),//konstruktor klasy bazowej
 		m_rotation_speed_body	(0.0f),
 		m_rotation_speed_head	(0.0f)
 	{
@@ -30,8 +30,9 @@ CActor		(uniqueId),//konstruktor klasy bazowej
 	void CFlora::Update(float dt)
 	{
 		UpdateShadowOffset(dt);
-		this->RotateBody(m_rotation_speed_body);
-		this->RotateHead(m_rotation_speed_head);
+		//UpdateShadow(dt);//w³¹czamy cieñ...
+		RotateBody(m_rotation_speed_body * weather::gWeather.GetWindSpeed());
+		RotateHead(m_rotation_speed_head * weather::gWeather.GetWindSpeed());
 	}
 
 	//Metoda zwraca prêdkoœæ rotacji body
@@ -57,8 +58,6 @@ CActor		(uniqueId),//konstruktor klasy bazowej
 	{
 		m_rotation_speed_head = rotation_speed_head;
 	}
- 
-
 }//namespace logic
 
  

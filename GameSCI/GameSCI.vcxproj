@@ -91,6 +91,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\Weather\CWeatherProperties.cpp" />
     <ClCompile Include="source\Weather\CWind.cpp" />
     <ClCompile Include="source\Factory\CCarTemplate.cpp" />
     <ClCompile Include="source\Logic\Car\CCar.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="source\Factory\CPlayerTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\Weather\CWeatherProperties.h" />
     <ClInclude Include="source\Weather\CWind.h" />
     <ClInclude Include="source\Factory\CCarTemplate.h" />
     <ClInclude Include="source\Logic\Car\CCar.h" />

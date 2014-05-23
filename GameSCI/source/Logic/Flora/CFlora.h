@@ -10,6 +10,9 @@
 #define H_FLORA_JACK
 
 #include "../Actor/CActor.h"
+#include "../../Weather/CWeather.h"
+
+//#define gWeather CWeather::GetSingleton()
 
 namespace logic
 {

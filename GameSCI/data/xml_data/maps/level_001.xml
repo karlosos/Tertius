@@ -4,10 +4,17 @@
 	<!--szerokosc mapy w kaflach-->
 	<!--wysokosc mapy w kaflach-->
 	<version>1</version>
-	<width>16</width>
-	<height>16</height>
-	
-	<!--Typy wzorcow dostępnych na mapie-->
+	<width>3</width>
+	<height>3</height>
+
+  <level_config
+    min_speed = "3"
+    max_speed ="10"
+    min_duration ="3"
+    max_duration ="10"
+  />
+  
+  <!--Typy wzorcow dostępnych na mapie-->
 	<!--code - nazwa wzorca-->
 	<!--file - nazwapliku xml-->
 	<objtype code = "enemy_destroyer"	file = "data/xml_data/units_enemy/destroyer.xml" />

@@ -80,6 +80,12 @@ namespace weather
 		///
 		inline void SetWeatherShadowColor(const sf::Color& color_shadow) { m_color_shadow = color_shadow; }
 
+		//Interface zwraca prêdkoœæ wiatru
+		inline const float GetWindSpeed() const
+		{
+			return m_wind->getWindSpped();
+		}
+
 	protected:
 
 		///

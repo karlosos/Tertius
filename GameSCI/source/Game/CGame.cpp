@@ -91,7 +91,6 @@ namespace game
 
 		//rysujemy obiekty na scenie
 		gDrawableManager.DrawFrame();
-
 		//wyliczamy FPS
 		FPS_Game.UpdateFPS();
 		fps_text.setString("FPS: "+ stringutils::ToString<int>(FPS_Game.GetFPS()));

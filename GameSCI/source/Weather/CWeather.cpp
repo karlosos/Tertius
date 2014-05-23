@@ -122,3 +122,5 @@ namespace weather
 //Nadanie wartoœci sta³ym sk³adowum statycznym
 sf::Color weather::CWeather::m_default_color_shadow = sf::Color(0,0,0,82);	//pocz¹tkowa wartoœæ koloru i nasycenia cienia
 																			//w zale¿noœci od pory dnia
+
+
