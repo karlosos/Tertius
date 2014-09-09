@@ -219,9 +219,6 @@
     <ClCompile Include="source\Weather\CWind.cpp">
       <Filter>source\Weather</Filter>
     </ClCompile>
-    <ClCompile Include="source\Weather\CWeatherProperties.cpp">
-      <Filter>source\Weather</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\ResourceManager\CFont.h">
@@ -402,9 +399,6 @@
       <Filter>source\Factory</Filter>
     </ClInclude>
     <ClInclude Include="source\Weather\CWind.h">
-      <Filter>source\Weather</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Weather\CWeatherProperties.h">
       <Filter>source\Weather</Filter>
     </ClInclude>
   </ItemGroup>
